@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>don vi do css va cac selector</title>
+    <style>
+        html
+        {
+            /*don vi do co ban CSS*/
+            font-size: 16pc;
+        }
+        input[type="button"]{
+
+            font-size: 1rem;
+            padding: 0.em 2.5em;
+        }
+        input[type="text"]{
+            font-size: 1rem;
+            padding: 0.4em;
+        }
+        input[type="number"]{
+            font-size:1rem ;
+            padding: 0.4em
+
+        p{
+            /* relative to rot html element*/
+            font-size: 1rem;
+            /*80% of parent's width*/
+            width: 80%;
+            /* tuong doi voi the hien tai*/
+            margin: 0,5em 2em;
+            /*gia tri tuyet doi*/
+            border: 5mm;
+            padding:0;
+            /*1.4 lan so voi hia tri font-size*/
+            line-height: 140%;
+        }
+        /*
+        in(inch)
+        cm( centimeter)
+        mm(millimeter)
+        pt(point) inch = 72 point. 1pt = 1/72in ~ 0.014in ~0.35mm
+        px: 1px = 1/96 inch; tu 1pt = 1/72 inch => 12pt = 16px = 1/6 inch = 0.42cm;
+        
+        */
+        
+    </style>
+</head>
+<body>
+    <input type ="butten" value ="button">
+    <input type="text" value ="this is a text 80%" id="">
+    <input type="number" value="5" min="0" max="10" size="">
+    
+    
+</body>
+</html>
