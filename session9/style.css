@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #f2796e;
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+    justify-content: space-around;
+
+}
+.images{
+    background-image:  url ("./images/
+    background-position: center;
+    background-
+}
+   
