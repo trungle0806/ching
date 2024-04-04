@@ -96,8 +96,81 @@ const ConfirmPasswordEl = document.querySelector('#confirm-password');
 
     const showError = (input, message) => {
 
-        const formField 
-
+        const formField = input.parentElement;
+    
+        formField.classList.remove('success');
+        formField.classList.add('error');
+        
+        
+        const error = formField.querySelector('smalll');
+        error.textContent = message;
+    };
+    
+    const showSuccess = (input) => {
+    
+        const formField = input.parentElement;
+    
+    
+        formField.classList.remove('error');
+        formField.classList.add('success');
+    
+    
+        const error = formField.querySelector('small');
+        error.textContent = '';
+    }
+    
+    
+    form.addEventListener('submit', function(e) {
+    
+        e.preventDefault();
+    
+    
+        let isUsernameValid = checkUsername(),
+            isEmailvalid = checkEmail(),
+            isPasswordValid = checkPassword(),
+            isConfirmPasswordValid = checkConfirmPassword();
+    
+        let isFormValid = isUsernameValid &&
+            isEmailvalid &&
+            isPasswordValid &&
+            isConfirmPasswordValid;
+    
+    
+    if (isFormValid) {
+    
+    }
+    });
+    
+    
+    const debounce = (fn, delay = 1) => {
+        let timeoutId;
+        return (...args) => {
+    
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+    
+            timeoutId = setTimeout(() => {
+                fn.apply(null,args)
+            },delay);
+        };
+    };
+    form.addEventListener('input', debounce(function(e) {
+        switch (e.targe.id){
+            case 'username' :
+                checkUsername();
+                break;
+            case 'email' :
+                checkEmail();
+                break;
+            case ' password ' :
+                checkPassword();
+                break;
+            case 'confirm-password':
+                checkConfirmPassword();
+                break;
+        }
+    }));
 
 
 

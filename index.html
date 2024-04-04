@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>a yeu chi </title>
+    <title>CSS Selector example</title>
+    <!-- Có 3 selector chính
+        1. selector ID: Sử dung id của thẻ (tag)
+        2. selector Class: sử d th t class c thẻ
+        3. selector tag: sử d tn thẻ
+    -->
+    <!-- bắt đầu cuả 1 khai báo css-->
+    <style>
+        /*selector ID:# */
+        #special{
+            color: red;
+            text-decoration: underline;
+        }
+        /* selector tag( sử dụng tên thẻ html) */
+        p{
+            font-size: 20px;
+            color: blue;
+        }
+        /* selrctor class ( sử dụng thuộc tính class) */
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+        }
+        /* selector tag, thiết lập thuộc tính con */
+        input[type="text"]{
+            border: 3px solid gray;
+        }
+        input[type="password"]{
+            border: 3px solid blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>a yeu chi nhieu lam</h1>
+    <h1 id="special">Welcome to my site</h1>
+    <p>this is paragreaph will have font size...</p>
+    <p>this is another paragraph</p>
+    <ul>
+    <li class="highlight">list item 1</li>
+    <li>list item 2</li>
+    <li id="special">list item 3</li></ul>
+    <h1>This is H1 tag</h1>
+    <input type="text" placeholder="Nhập tên"></br>
+    <input type="password" placeholder="Nhập mật khẩu"
 </body>
 </html>

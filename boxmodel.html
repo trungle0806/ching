@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model example</title>
+    <style>
+        ul{
+            display: inline-flex;
+            list-style:none;
+        }
+        li{
+            padding: .5em;
+            border:2px solid blue
+        }
+        ul,p{
+            border:1px solid green;
+            padding:.5em;
+        }
+        .inline{
+            display: inline
+            padding: 1em;
+
+        }
+        .box{
+            width: 350px;
+            height: 150px;
+            inline-size: 350px;
+            background-color: green;
+            padding:40px;
+            margin: 30px ;
+            block-size: 150px;
+            border:5px solid black;
+            
+        }
+        .alternate{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+    <p class=".inline"> I am a programming</p>
+    <div class="box">
+        <spam>content</spam>
+    </div>
+    <div class="box">Box standard</div>
+    <div class="box alternate"> Box a</div>
+    
+</body>
+</html>

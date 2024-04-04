@@ -74,4 +74,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
     setTimeout(function () {
       model.style.display = "block";
     }, 300);
-  }a
+  }
+  
